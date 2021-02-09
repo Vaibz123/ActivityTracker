@@ -1,0 +1,15 @@
+.checked{
+    color:red;
+    text-decoration: line-through;
+}
+
+
+
+.content {
+    max-width: 40vw;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    align-items: center;
+    align-content: center;
+  }

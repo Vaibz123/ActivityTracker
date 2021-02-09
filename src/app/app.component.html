@@ -1,0 +1,15 @@
+
+<h1 style="text-align: center;">Activity Tracker</h1>
+<div class="content">
+  
+  <div *ngFor="let todo of todos; let i=index"class="todoItem">
+    <input type="checkbox" [(ngModel)]="todo.done">
+    <span [ngClass]="{'checked':todo.done}">{{i+1}}. {{todo.item}}</span>    
+  </div>
+  <span *ngIf="todos.length == 0">No activities added yet. Start by adding one</span><br/><br/>
+
+  <input id="newTodo" type="text" [(ngModel)]="newToDo"><br/><br/>
+
+  <button id="add" (click)=addMore() >Add an activity</button>
+  <button id="clear" (click)=clearAll() >Clear all</button>
+</div>
